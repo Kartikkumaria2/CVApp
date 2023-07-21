@@ -25,11 +25,11 @@ export default function Canvas({ form1, form2 }) {
         <div className='child1'>
           <h2 className='child1_1'>{form1["Name"]}</h2>
 
-          {form1["LinkedIn"]!==null?(<span><img src = {linked}></img><h4 className='child1_2'>{form1["LinkedIn"]}</h4></span>):null}
-          {form1["GitHub"]!==null?(<span><img src = {git}></img><h4 className='child1_3'>{form1["GitHub"]}</h4></span>):null}  
-          {form1["Mobile"]!==null?(<span><img src = {phone}></img><h4 className='child1_4'>{form1["Mobile"]}</h4></span>):null}
-          {form1["Address"]!==null?(<span><h4 className='child1_5'>{form1["Address"]}</h4></span>):null}
-          {form1["Email"]!==null?(<span className='child1_5' ><img src = {email}></img><h4 >{form1["Email"]}</h4></span>):null}
+          {form1["LinkedIn"]===null||form1["LinkedIn"]===""?null:(<span><img src = {linked}></img><h4 className='child1_2'>{form1["LinkedIn"]}</h4></span>)}
+          {form1["GitHub"]===null||form1["GitHub"]===""?null:(<span><img src = {git}></img><h4 className='child1_3'>{form1["GitHub"]}</h4></span>)}  
+          {form1["Mobile"]===null||form1["Mobile"]===""?null:(<span><img src = {phone}></img><h4 className='child1_4'>{form1["Mobile"]}</h4></span>)}
+          {form1["Address"]===null||form1["Address"]===""?null:(<span><h4 className='child1_5'>Address:{form1["Address"]}</h4></span>)}
+          {form1["Email"]===null||form1["Email"]===""?null:(<span className='child1_5' ><img src = {email}></img><h4 >{form1["Email"]}</h4></span>)}
         </div>
 
         <div className='child2'>
