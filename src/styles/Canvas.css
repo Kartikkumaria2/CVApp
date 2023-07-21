@@ -1,11 +1,13 @@
 .Can{
     margin:1em;
-    height:100%;
+    height:min-content;
     width:50vw;
     display:grid;
     grid-template-rows: 1fr 5fr;
     grid-template-columns: 100%;
     border:2px solid black;
+    background-color: white;
+    color:black;
 }
 .child1{
     display:grid;
@@ -24,7 +26,7 @@
 .child2{
     display:grid;
     grid-template-columns: 100%;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 3fr;
 }
 .child3{
     display:flex;
@@ -55,6 +57,7 @@ hr{
     display:flex;
     flex-direction: column;
     padding:1em;
+    padding-top:0
 }
 .schild1{
     display:flex;

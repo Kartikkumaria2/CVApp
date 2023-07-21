@@ -71,7 +71,7 @@ export default function Canvas({ form1, form2 }) {
             {form2["Post Graduation"]!==null?(
             <div className = "school">
                     <div className="schild1">
-                    <h4>Bachelor's: {form2["Post Graduation"]}</h4>
+                    <h4>Post Graduation: {form2["Post Graduation"]}</h4>
                     <h4>CGPA: {form2["Post Graduation Grade"]}</h4>
                     </div>
                     <div className="schild1">
