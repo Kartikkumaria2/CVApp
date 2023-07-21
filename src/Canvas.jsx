@@ -46,7 +46,7 @@ export default function Canvas({ form1, form2 }) {
           <div className="child4">
             <h2>Education</h2>
             <hr></hr>
-            {form2["School"]!==null?(
+            {form2["School"]===null||form2["School"]===""?null:(
             <div className = "school">
                     <div className="schild1">
                     <h4>School: {form2["School"]}</h4>
@@ -56,8 +56,8 @@ export default function Canvas({ form1, form2 }) {
                     <h4>from: {form2["Start date1"]}</h4>
                     <h4>to: {form2["End date1"]}</h4>
                     </div>
-            </div>):null}
-            {form2["Bachelor"]!==null?(
+            </div>)}
+            {form2["Bachelor"]===null||form2["Bachelor"]===""?null:(
             <div className = "school">
                     <div className="schild1">
                     <h4>Bachelor's: {form2["Bachelor"]}</h4>
@@ -67,8 +67,8 @@ export default function Canvas({ form1, form2 }) {
                     <h4>from: {form2["Start date2"]}</h4>
                     <h4>to: {form2["End date2"]}</h4>
                     </div>
-            </div>):null}
-            {form2["Post Graduation"]!==null?(
+            </div>)}
+            {form2["Post Graduation"]!==null||form2["Post Graduation"]===null?null:(
             <div className = "school">
                     <div className="schild1">
                     <h4>Post Graduation: {form2["Post Graduation"]}</h4>
@@ -78,7 +78,7 @@ export default function Canvas({ form1, form2 }) {
                     <h4>from: {form2["Start date3"]}</h4>
                     <h4>to: {form2["End date3"]}</h4>
                     </div>
-            </div>):null}
+            </div>)}
           </div>
         </div>
       </div>
